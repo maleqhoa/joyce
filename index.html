@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/1b8c0db9bf.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body class="page1" id="top">
+		<div class="main">
+<!--==============================header=================================-->
+			<header>
+				<div class="menu_block ">
+					<div class="container_12">
+						<div class="grid_12">
+							<nav>
+								<ul class="sf-menu">
+									<li class="current"><a href="index.html">Home</a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="Cars.html">Cars</a></li>
+									<li><a href="Services.html">Services</a></li>
+									<li><a href="contacts.html">Contacts</a></li>
+								</ul>
+							</nav>
+							
+						</div>
+						
+					</div>
+				</div>
+				<div class="container_12">
+					<div class="grid_12">
+						<h1>
+							<a href="index.html">
+								<img src="logo.png" alt="Your Happy Family">
+							</a>
+						</h1>
+					</div>
+				</div>
+				
+			</header>
+			<div class="container" style="max-width: 800px; margin: 0 auto;padding: 20px;">
+				<article class="article">
+					<video controls>
+						<source src="1.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<div class="article-content">
+						<h2>Explore the World with TourTaxi</h2>
+						<p>TourTaxi is your trusted partner in transportation services. We cater to travelers of all kinds, from tourists exploring new destinations to business professionals attending conferences.</p>
+						<p>We provide reliable transportation solutions, including airport transfers, city tours, corporate transportation, long-distance travel, package delivery, event transportation, and customized tours.</p>
+						<p>We believe in making travel seamless and enjoyable. With TourTaxi, you can expect safe, comfortable, and affordable transportation services tailored to your needs.</p>
+						<p>We are Based in All districs of Lesotho, TourTaxi operates locally and offers services to various destinations. Whether you need a ride to the airport or a guided tour around the city, we've got you covered.</p>
+					</div>
+				</article>
+			</div>
+			<div class="container_12">
+				<div class="grid_4">
+					<div class="banner">
+						<div class="maxheight">
+							<div class="banner_title">
+								<img src="icon1.png" alt="">
+								<div class="extra_wrapper">Fast&amp;
+									<div class="color1">Safe</div>
+								</div>
+							</div>
+							<p>We prioritize both speed and safety in transportation. Our experienced drivers,
+								well-maintained vehicles, and efficient route planning ensure timely arrival while ensuring passenger safety</p>
+							<a href="#" class="fa fa-share-square"></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="banner">
+						<div class="maxheight">
+							<div class="banner_title">
+								<img src="icon2.png" alt="">
+								<div class="extra_wrapper">Best
+									<div class="color1">Prices</div>
+								</div>
+							</div>
+							<P>Enjoy competitive pricing with transparent fare breakdowns. Take advantage of discounts, 
+								special rates, and loyalty programs for the best deals on travel.</P>
+							<a href="#" class="fa fa-share-square"></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="banner">
+						<div class="maxheight">
+							<div class="banner_title">
+								<img src="icon3.png" alt="">
+								<div class="extra_wrapper">Package
+									<div class="color1">Delivery</div>
+								</div>
+							</div>
+							<P>Trust us for reliable and convenient package delivery services. Benefit from same-day delivery 
+								options, parcel tracking, and secure handling procedures for the safe and timely transport of your
+								 belongings.</P>
+							<a href="#" class="fa fa-share-square"></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="c_phone">
+				<div class="container_12">
+					<div class="grid_12">
+						<div class="fa fa-phone"></div>
+						<P>+266 2232 3347</P>
+						<span>ORDER NOW!</span>
+					</div>
+					
+				</div>
+			</div>
+<!--==============================Content=================================-->
+			<div class="content">
+				<div class="container_12">
+					<div class="grid_5">
+						<h3>Booking Form</h3>
+						<form id="bookingForm">
+							<div class="fl1">
+								<div class="tmInput">
+									<input name="Name" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+								</div>
+								<div class="tmInput">
+									<input name="From" placeHolder="From:" type="text" data-constraints="@NotEmpty @Required ">
+								</div>
+							</div>
+							<div class="fl1">
+								<div class="tmInput">
+									<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
+								</div>
+								<div class="tmInput mr0">
+									<input name="To" placeHolder="To:" type="text" data-constraints="@NotEmpty @Required">
+								</div>
+							</div>
+							<div class="clear"></div>
+							<strong>Time</strong>
+							<div class="tmInput">
+								<input name="Time" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+							<div class="clear"></div>
+							<strong>Date</strong>
+							<label class="tmDatepicker">
+								<input type="text" name="Date"	placeHolder='20/05/2014' data-constraints="@NotEmpty @Required @Date">
+							</label>
+							<div class="clear"></div>
+							<div class="tmRadio">
+								<p>Comfort</p>
+								<input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
+								<span>Cheap</span>
+								<input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+								<span>Standart</span>
+								<input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+								<span>Lux</span>
+							</div>
+							<div class="clear"></div>
+							<div class="fl1 fl2">
+								<em>Adults</em>
+								<select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+									<option>1</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+								<div class="clear height1"></div>
+							</div>
+							<div class="fl1 fl2">
+								<em>Children</em>
+								<select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+									<option>0</option>
+									<option>0</option>
+									<option>1</option>
+									<option>2</option>
+								</select>
+							</div>
+							<div class="clear"></div>
+							<div class="tmTextarea">
+								<textarea name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
+							</div>
+							<a href="#" class="btn" data-type="submit">Submit</a>
+						</form>
+					</div>
+					<div class="grid_6 prefix_1">
+						<a href="index2.html" class="type"><img src="page1_img1.jpg" alt=""><span class="type_caption">Economy</span></a>
+						<a href="index2.html" class="type"><img src="page1_img2.jpg" alt=""><span class="type_caption">Standard</span></a>
+						<a href="index2.html" class="type"><img src="page1_img3.jpg" alt=""><span class="type_caption">Lux</span></a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="f_phone"><span>Call Us:</span>
+						<P>+266 2232 3347</P>
+					</div>
+					<div class="socials">
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-google-plus"></a>
+					</div>
+					<div class="copy">
+						<div class="st1">
+						<div class="brand">Tour<span class="color1">T</span>axi </div>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+		
+	</body>
+</html>
